@@ -1,0 +1,13 @@
+# Matmake file
+# https://github.com/mls-m5/matmake
+
+cppflags += -std=c++14      # c++ only flags
+flags += -Iinclude          # global flags
+flags += -W -Wall -Wno-unused-parameter -Wno-sign-compare #-Werror
+flags += -g -O0
+
+## Main target
+main.src = src/main.cpp
+
+## findaddres
+findaddres.src = src/findaddress.cpp
